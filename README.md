@@ -1,3 +1,3 @@
 # iva
 
-es una pagina web de un aiglesia
+es una pagina web de una iglesia
