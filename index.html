@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es" lang="en">
+	<head>
+<!--<meta charset="UTF-8" />-->
+		<meta content="text/html; charset=utf-" http-equiv=Content-Type>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+
+		<title>Mys Viajes - Eric</title>
+
+		<!--CSS-->
+		<link rel="stylesheet" href="css/global.css" />
+		<link rel="stylesheet" href="css/menu.css" />
+		<link rel="stylesheet" href="css/my-slider.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+
+		<!--JS-->
+	</head>
+	<body>
+		<header class="cls-header">
+			<!--<div id="logo">Code<span id="logo-s">Daniela</span></div>
+			<span class="sign"><a class="act" href="#">SIGN UP</a></span>
+			<span class="sign"><a href="#">SIGN IN</a></span>-->
+
+			<nav class="nav-menu">
+				<div class="container-logo mycol-1">
+					<div class="cont-logo">
+						<div class="logo-name">
+							<!--<a href="index.html"><img src="images/Logo-IVA.png" /></a>-->
+							<a href="index.html" class="tit-logo">VidaAbundante</a>
+						</div>
+						<div class="icon-menu">
+							<a id="btn-menu" class="btn-menu"
+								><span class="fa fa-bars"></span
+							></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-menu-link mycol-2">
+					<ul>
+						<li class="active">
+							<a href="index.html">Inicio</a>
+						</li>
+						<li>
+							<a href="#id-nosotros" class="cls-nosotros">Nosotros</a>
+						</li>
+						<li>
+							<a href="#12345" class="sub-menu">Servicios</a>
+							<ul>
+								<li>
+									<a href="#id-servicios" class="cls-servicios"
+										>Red de Jovenes</a
+									>
+								</li>
+								<li><a href="#12345">Red de Adultos</a></li>
+								<li><a href="#12345">Zona kids</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#12345" class="sub-menu">Ministerios</a>
+							<ul>
+								<li>
+									<a href="#id-ministerios" class="cls-ministerios">Alabanza</a>
+								</li>
+								<li><a href="#12345">Teatro</a></li>
+								<li><a href="#12345">Universidad de la Vida</a></li>
+							</ul>
+						</li>
+						<li><a href="eventos.html" class="pepe">Eventos</a></li>
+						<li><a href="galeria.html" class="pepe">Media</a></li>
+						<li><a href="contacto.html" class="pepe">Contacto</a></li>
+					</ul>
+				</div>
+
+				<div class="container-icons mycol-3">
+					<ul class="ul-icons">
+						<li>
+							<a
+								href="https://www.facebook.com/Iglesia-Vida-Abundante-336218873235061/"
+								target="_blank"
+								class="item-fac"
+							>
+								<span class="fa fa-facebook fa2" aria-hidden="true"></span>
+								<span class="fa fa-facebook fa2" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.youtube.com/channel/UCsljLl698YP9eg-zofaSZWw"
+								target="_blank"
+								class="item-you"
+							>
+								<span class="fa fa-youtube-play yo2" aria-hidden="true"></span>
+								<span class="fa fa-youtube-play yo2" aria-hidden="true"></span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item-twi">
+								<span class="fa fa-twitter tw2" aria-hidden="true"></span>
+								<span class="fa fa-twitter tw2" aria-hidden="true"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		        <!--\ Linea No Mover de aqui /-->                
+			<hr class="hr-ema-linea">
+		</header>
+		<!-------------------------- Fin Header -------------------------->
+
+		<!------------------------ Banner / Slider ----------------------->
+		<div class="slider">
+			<!-- Imagen - Desvanece css -->
+			<div class="myslide animate-fade banner">
+				<div class="container-txt">
+					<h1>Las mejores aventuras - 1</h1>
+					<p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+				</div>
+				<img src="images/myslider/foto01.jpg" />
+			</div>
+
+			<div class="myslide animate-fade banner">
+				<div class="container-txt">
+					<h1>La mejor laguna del Peru - 2</h1>
+					<p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+				</div>
+				<img src="images/myslider/foto02.jpg" />
+			</div>
+
+			<div class="myslide animate-fade banner">
+				<div class="container-txt">
+					<h1>Laguna de Llanganuco - 3</h1>
+					<p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+				</div>
+				<img src="images/myslider/foto03.jpg" />
+			</div>
+
+			<div class="myslide animate-fade banner">
+				<div class="container-txt">
+					<h1>Viaje de Danielita 4</h1>
+					<p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+				</div>
+				<img src="images/myslider/foto04.jpg" />
+			</div>
+
+			<div class="myslide animate-fade banner">
+				<div class="container-txt">
+					<h1>Viaje de Lorenita 5</h1>
+					<p>Web Devoloper<br />Subscribe To My Channel For More Videos</p>
+				</div>
+				<img src="images/myslider/foto05.jpg" />
+			</div>
+			<!-- /Imagen - Desvanece css -->
+
+			<!-- Evento onclick js -->
+			<a class="btn-prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="btn-next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="container-btns-dotsbox">
+				<span class="btn-dot" onclick="currentSlide(1)"></span>
+				<span class="btn-dot" onclick="currentSlide(2)"></span>
+				<span class="btn-dot" onclick="currentSlide(3)"></span>
+				<span class="btn-dot" onclick="currentSlide(4)"></span>
+				<span class="btn-dot" onclick="currentSlide(5)"></span>
+			</div>
+			<!-- /onclick js -->
+		</div>
+		<!------------------------- //Fin banner ------------------------->
+		<section class="contenido-seccion1">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<br />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<br />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<br />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+
+			<div class="img-gradiente">
+			</div>
+
+			<br />
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
+				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
+				tempore voluptatibus, unde voluptate autem quia molestias. Error
+				obcaecati dolorem consequuntur.
+			</p>
+		</section>
+		<!--========================= JavaScript =========================-->
+		<!---------------------------------------------------------------->
+		<!-- Sliders js -->
+		<script src="js/my-slider.js"></script>
+		<!-- //Fin Slider js -->
+		<!---------------------------------------------------------------->
+		<!-- Menu Mobil y Scroll-->
+		<script src="js/3-jquery-3.5.1.js"></script>
+		<!--Master-->
+		<script src="js/my-menu.js"></script>
+		<!--Menu Mobil-->
+		<script type="text/javascript">
+			$(window).on("scroll", function () {
+				if ($(window).scrollTop()) {
+					$("nav").addClass("black");
+				} else {
+					$("nav").removeClass("black");
+				}
+			});
+		</script>
+		<!--//Fin Scroll Menu-->
+		<!---------------------------------------------------------------->
+
+		<!-- //Banner   -->
+	</body>
+</html>

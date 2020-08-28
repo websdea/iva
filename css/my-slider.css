@@ -1,0 +1,290 @@
+﻿/* 1 */
+header {
+	height: auto;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 3; /*2;*/
+	background: transparent;
+}
+#logo {
+	line-height: 60px;
+	margin-left: 40px;
+	display: inline-block;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--primary);
+}
+#logo:hover {
+	color: var(--blanco);
+}
+#logo-s {
+	color: var(--blanco);
+	margin-left: 5px;
+}
+#logo:hover #logo-s {
+	color: var(--primary);
+}
+.sign {
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+}
+.sign a {
+	color: var(--blanco);
+	font-weight: bold;
+	text-decoration: none;
+}
+.act {
+	border: 2px solid var(--blanco);
+	border-radius: 50px;
+	padding: 6px 15px;
+}
+.sign a:hover {
+	color: var(--primary);
+	border-color: var(--primary);
+}
+/* /1 */
+
+/* 2 */
+.slider {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #2c3e50; /* darckblue */
+}
+.banner {
+	position: relative;
+}
+.banner::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.myslide {
+	/*Para el JQuery*/
+	width: 100%;
+	height: 100%; /*655px;*/
+	display: none;
+	overflow: hidden;
+}
+
+.btn-prev,
+.btn-next {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	font-size: 50px;
+	padding: 15px;
+	cursor: pointer;
+	color: var(--blanco);
+	transition: 0.1s;
+	user-select: none;
+	z-index: 2; /*0*/
+}
+.btn-prev:hover,
+.btn-next:hover {
+	color: var(--primary);
+}
+.btn-next {
+	right: 0;
+}
+.container-btns-dotsbox {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 40px;
+	text-align: center;
+	/*cursor: pointer;*/
+	z-index: 2;
+}
+.btn-dot {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 3px solid var(--blanco);
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+	z-index: 2;
+}
+/* /2 */
+
+/* javascript */
+.active,
+.btn-dot:hover {
+	border-color: var(--primary);
+}
+/* /javascript */
+
+/* Animación de Desvanecimiento fade */
+.animate-fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+/*@-webkit-keyframes fade {
+	from {
+		opacity: 0.8;
+	}
+	to {
+		opacity: 1;
+	}
+}*/
+
+@keyframes fade {
+	from {
+		opacity: 0.8;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* /fin Animación Desvanecimiento fade */
+
+/* 3 */
+.container-txt {
+	position: absolute;
+	color: var(--blanco);
+	letter-spacing: 2px;
+	line-height: 35px;
+	top: 40%;
+	left: 15%;
+	-webkit-animation-name: posi;
+	-webkit-animation-duration: 2s;
+	animation-name: posi;
+	animation-duration: 2s;
+	z-index: 2; /*1;*/
+}
+
+/*@-webkit-keyframes posi {
+	from {
+		left: 25%;
+	}
+	to {
+		left: 15%;
+	}
+}*/
+
+@keyframes posi {
+	from {
+		left: 25%;
+	}
+	to {
+		left: 15%;
+	}
+}
+
+.container-txt h1 {
+	color: var(--primary);
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+.container-txt p {
+	font-weight: bold;
+	font-size: 20px;
+}
+/* /3 */
+
+/* 4 */
+.myslide img {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	object-fit: cover;
+}
+.myslide img {
+	transform: scale(1.5, 1.5);
+	-webkit-animation-name: zoomin;
+	-webkit-animation-duration: 40s;
+	animation-name: zoomin;
+	animation-duration: 40s;
+}
+/*@-webkit-keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+*/
+@keyframes zoomin {
+	from {
+		transform: scale(1, 1);
+	}
+	to {
+		transform: scale(1.5, 1.5);
+	}
+}
+/* /4 */
+
+/* 5 */
+@media screen and (max-width: 800px) {
+	.myslide,
+	.slider {
+		height: 500px;
+	}
+	.container-txt {
+		letter-spacing: 2px;
+		line-height: 25px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-animation-name: posi2;
+		-webkit-animation-duration: 2s;
+		animation-name: posi2;
+		animation-duration: 2s;
+	}
+
+	@-webkit-keyframes posi2 {
+		from {
+			top: 35%;
+		}
+		to {
+			top: 50%;
+		}
+	}
+
+	@keyframes posi2 {
+		from {
+			top: 35%;
+		}
+		to {
+			top: 50%;
+		}
+	}
+
+	.container-txt h1 {
+		font-size: 40px;
+	}
+	.container-txt p {
+		font-size: 13px;
+	}
+}
+/* /5 */
+
+/* 6 */
+@media screen and (max-width: 520px) {
+	.container-txt h1 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.sign {
+		margin-right: 20px;
+	}
+	.sign a {
+		font-size: 12px;
+	}
+}
+/* /6 */

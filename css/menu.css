@@ -1,0 +1,497 @@
+.cls-header {
+	width: 100%;
+}
+.cls-header .nav-menu {
+	width: 100%;
+	height: 70px; /*-----------------------------------110px;*/
+	margin: 0 auto;
+	margin-left: 0;
+	z-index: 2; /*5000*/
+	background: transparent;
+	position: fixed;
+	padding-top: 0px;/*---------------------10px;*/
+	/*background: linear-gradient(
+		to top,
+		transparent 22%,
+		rgba(0, 0, 0, 0.9)
+	);*/
+	box-sizing: border-box;
+	/*-----Centrar-----*/
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+/*----------Dividiendo el NAV en Columnas----------*/
+.nav-menu .mycol-1 {
+	/*Logo Imagen*/
+	left: 0;
+	top: 0;
+	width: 21%;
+	padding-left: 80px;/*------------------------7%;*/
+	padding-right: 10px;/*---------------------5%;*/
+	/*background: green;*/
+}
+.nav-menu .mycol-2 {
+	/*Logo Letra*/
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	/*background: red;*/
+}
+.nav-menu .mycol-3 {
+	/*Logo Icons*/
+	right: 0;
+	width: 18%;/*-------------------------------------18%;*/
+	padding-left: 80px;/*------------------------5%;*/
+	padding-right: 10px;/*----------------------------5%;*/
+	/*background: goldenrod;*/
+}
+.hr-ema-linea {
+	/*-Borde del Menu-*/
+	position: relative;
+	top: 75px;	/*-89.4%;*/
+	width: 100%; /*70%;*/
+	/*left: 50%;*/
+	/*transform: translateX(-50%) translateY(-50%);*/
+	border: 1px solid rgba(221, 221, 221, 0.1);
+}
+/*888888888888888888888888888888888888888888888888888888888888888888888888*/
+/*----------------------------Logo MENU-----------------------------*/
+.nav-menu .container-logo .cont-logo .logo-name {
+	display: flex;
+	align-items: center;
+		/*line-height: 30px; -------------------------------------------------------*/
+	margin-top: 14px; /*--------------------------------------------------------34px;*/
+}
+.container-logo .cont-logo .logo-name a {
+	text-decoration: none;
+	color: var(--primary);
+	text-shadow: 7px 0 7px black, 5px 0 10px black;
+	font-size: 40px;/*-----------------------45px;*/
+	margin-left: -2px;
+	font-family: "Tangerine";
+	transition: all 0.5s;
+}
+.container-logo .cont-logo .logo-name img {
+	width: 100px;
+	margin-top: -5px;
+	transition: all 0.5s;
+}
+.container-logo .cont-logo .btn-menu {
+	/*para el Mobil*/
+	display: none;
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+}
+/*888888888888888888888888888888888888888888888888888888888888888888888888*/
+/*--------------------------------MENU-----------------------------*/
+.nav-menu .container-menu-link ul,
+.nav-menu .container-icons ul {
+	list-style: none;
+	display: inline-flex; /*-Perfecto-*/
+	margin: 0;
+	padding-top: 0;
+	/*overflow: hidden;*/
+	text-align: center;
+	transition: 0.5s;
+}
+.container-menu-link ul li,
+.container-icons ul li {
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+.container-menu-link ul li a {
+	display: block; /*Ok*/
+	margin: 0;
+	margin-top: 28px; /*--------------------------------------------------------34px;*/
+	padding: 10px 14px; /*Perfecto*/
+	text-decoration: none;
+font-family: 'Poppins-600', sans-serif;
+	color: #fff;
+	font-size: 14px; /*---------------12.5px;*/
+/*	font-weight: 700;*/
+	letter-spacing: 1px;
+	border: 1px solid transparent;
+
+	text-transform: uppercase;
+	transition: all 0.5s;
+}
+.container-menu-link ul li a:hover,
+.container-menu-link ul li a:focus,
+.container-menu-link ul li a:focus ul li a:focus {
+	color: var(--primary);
+								/*	border: 1px solid var(--primary);*/
+	transition: all 0.7s;
+}
+/*-----------------------------------------------------------------*/
+/*--------------- JQuery para el Menu Fixed pegable ---------------*/
+/*-----------------------------------------------------------------*/
+nav.black {
+	/*-MENU-*/
+	background: rgba(0, 0, 0, 0.9) !important;
+	height: 60px !important;
+	box-shadow: 0 -2px 7px 4px #48706f;
+	transition: all 0.5s;
+}
+nav.black .container-logo .cont-logo .logo-name a {
+	text-shadow: 7px 0 7px white, 5px 0 10px white; /*Perfecto*/
+	/*Logo*/
+	font-size: 40px;
+	margin-top: -8px;
+	margin-left: -2px;
+	transition: all 0.5s;
+}
+nav.black .container-logo .cont-logo .logo-name img {
+	/*Logo*/
+	width: 60px;
+	margin-top: 0px;
+	transition: all 0.5s;
+}
+nav.black .container-menu-link ul li a {
+	/*Menu Principal*/
+	margin-top: 14px;/*---------------------------8px;*/
+	transition: all 0.5s;
+}
+nav.black .mycol-3 ul li {
+	/*Iconos*/
+	margin-top: 18px;/*---------------------------10px;*/
+	transition: all 0.5s;
+}
+nav.black .container-menu-link ul li ul {
+	/*Sub Menu*/
+	margin-top: 8px;/*---------------------------6px;*/
+}
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/*----------------Menu Mobil-----------------*/
+.container-menu-link .icon-menu {
+	cursor: pointer;
+}
+/*----------------------------------*/
+/*-------------\JScript/------------*/
+.nav-menu .container-menu-link ul li.active a {
+	color: var(--primary);
+	background: transparent;
+	transition: all 0.5s;
+}
+/*Activar Sub Menu*/
+.nav-menu .container-menu-link ul li.active ul li.active a {
+	font-size: 11.5px;
+	color: var(--primary);
+	transition: all 0.5s;
+}
+/*----------------------------------*/
+/*----------------------------------*/
+/*--------------------------SUB MENU-------------------------------*/
+.sub-menu {
+	display: none;
+}
+.nav-menu .container-menu-link ul li ul {
+	display: none;
+	position: absolute;
+	left: 1px; /*---14px;---*/
+	background: rgba(0, 0, 0, 0.6);
+	margin-top: 0;/*---------------------------8px;*/
+border: 1px solid #ccc;
+/*	border-top: 3.5px solid var(--primary);*/
+
+border-radius: 6px;
+}
+.nav-menu .container-menu-link ul li:hover ul {
+	display: block; /*Perfecto-> MOSTRAR EL SUB MENU*/
+}
+.nav-menu .container-menu-link ul li ul li {
+	display: block;
+	width: 218px;
+	text-align: left;
+	margin: 0 auto;
+}
+.nav-menu .container-menu-link ul li ul li a {
+	padding: 12px 18px;
+	font-size: 11.5px; /*11.5px;*/
+							font-weight: 100;
+	margin-top: 2px;
+	color: var(--blanco);
+}
+.nav-menu .container-menu-link ul li:hover ul li a {
+	border: 1px solid transparent; /*OK*/
+}
+
+					/*.container-menu-link ul li:hover a {border: 1px solid var(--primary);}*/
+
+.container-menu-link ul li:hover ul li a:hover,
+.container-menu-link ul li:hover a {
+	color: var(--primary);
+	/*-NO AGREGAR MAS, ESTO MODIFICA LOS ITEMS DEL MENU PRINCIPAL-*/
+}
+
+.container-menu-link ul li:hover ul li a:hover {
+	background: #000;
+							font-weight: 100;
+}
+
+.container-menu-link ul li:hover ul li:last-child {
+	/*Agrega espacio al Final*/
+	margin-bottom: 3px;
+}
+
+/*888888888888888888888888888888888888888888888888888888888888888888888888*/
+/*-------------------------Para los Iconos-------------------------*/
+.nav-menu .container-icons ul li {
+	margin: 0 3px;
+	margin-top: 30px; /*------------------------------------------36px;*/
+	list-style: none;
+	transition: all 0.5s;
+}
+.container-icons ul li a {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 26px;
+	height: 26px;
+	line-height: 28px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 13px;
+	font-family: sans-serif;
+	vertical-align: middle;
+	border: 1px solid darkgray;
+	/*background: transparent;*/
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 2px;
+	overflow: hidden;
+}
+.container-icons ul li a span {
+	display: inline-block;
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.container-icons ul li a .fa2 {
+	color: #f1f1f1; /*#A1F6FF---color: #3b5998;*/
+}
+.container-icons ul li a .tw2 {
+	color: #f1f1f1; /*#A1F6FF---color: #00aced;*/
+}
+.container-icons ul li a .yo2 {
+	color: #f1f1f1; /*#A1F6FF---color: #bb0000;*/
+}
+.container-icons ul li a:hover {
+	border: 1px solid transparent;
+}
+
+.container-icons ul li:hover a span:nth-child(1) {
+	transform: translateY(-30px); /*Perfecto*/
+	transition: all 0.6s;
+}
+.container-icons ul li:hover a span:nth-child(2) {
+	transform: translateY(-30px); /*Perfecto*/
+	color: #fff;
+}
+.container-icons ul li:hover:nth-child(1) a {
+	/*Facebook*/
+	background: #3b5998;
+}
+.container-icons ul li:hover:nth-child(2) a {
+	/*youtube*/
+	background: #bb0000;
+}
+.container-icons ul li:hover:nth-child(3) a {
+	/*twitter*/
+	background: #00aced;
+}
+/*888888888888888888888888888888888888888888888888888888888888888888888888*/
+
+/*888888888888888888888888888888888888888888888888888888888888888888888888*/
+@media (max-width: 1400px) {
+	.nav-menu .mycol-1 {
+		/*Logo Imagen*/
+/*		width: 20%;*/
+		padding-left: 20px;
+		padding-right: 4px;
+	}
+	.nav-menu .mycol-2 {
+		/*Logo Letra*/
+
+/*		width: 60%;
+		padding-left: 13%;*/
+	}
+	.nav-menu .mycol-3 {
+		/*Logo Icons*/
+		width: 10%;
+		padding-left: 20px;
+		padding-right: 4px;
+	}
+/*	.hr-ema-linea {
+		left: 50%;
+		width: 75%;
+	}*/
+}
+
+/*----------------------------ok-------------------------------------*/
+@media (max-width: 900px),(max-width: 1200px) {
+	.cls-header .nav-menu,
+	nav.black {
+		background: rgba(0, 0, 0, 1);
+		height: 60px;
+		box-shadow: 0 -2px 7px 4px gray; /*#48706f;*/
+	}
+	.nav-menu .container-logo {
+		width: 100%;
+	}
+	.container-logo .cont-logo {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 1px; /*12.5123px;*/
+	}
+	.container-logo .cont-logo .logo-name a,
+	nav.black .container-logo .cont-logo .logo-name a {
+		/*.container-logo .cont-logo .logo-name .tit-logo,
+	nav.black .container-logo .cont-logo .logo-name .tit-logo {*/
+		font-size: 28px;
+		letter-spacing: 1.5px;
+		color: var(--primary);
+		line-height: 0;
+		padding: 0;
+		margin-top: 7px; /*-14px;----------------------------------------------------------*/
+		margin-left: 10px;
+		margin-bottom: 10px;
+		margin-right: 0;
+	}
+	/*.container-logo .cont-logo .logo-name img,
+	nav.black .container-logo .cont-logo .logo-name img {
+		width: 55px;
+		margin-top: -8px;
+	}*/
+
+	.container-logo .cont-logo .btn-menu {
+		/*Icono-Boton para el Mobil*/
+		display: inline-block; /*block;*/
+		margin-right: 12.5123px;
+		margin-top: 14px; /*7px;----------------------------------------------------------*/
+		cursor: pointer;
+	}
+	/*---------------------------------------------*/
+	/*------------------MENU Mobil-----------------*/										.nav-menu .container-menu-link,
+	nav.black .container-menu-link {
+		width: 100%;
+		position: absolute;
+		background: rgba(0, 0, 0, 0.9);
+		height: auto; /*316px;-----------------------------------Perfecto*/ /*301px;--para 6 Items*/
+		top: 60px;
+		left: -100%;
+		z-index: 5000;
+		transition: 0.7s;
+	}
+	.nav-menu .container-menu-link ul,
+	nav.black .container-menu-link ul {
+		/*-Pefecto-*/
+		display: block;
+		width: 100%;
+	}
+	.nav-menu .container-menu-link ul li,
+	nav.black .container-menu-link ul li {
+		/*-Pefecto-*/
+		display: block;
+	}
+	.nav-menu .container-menu-link ul li a,
+	nav.black .container-menu-link ul li a {
+		/*-Pefecto-*/
+		display: block;
+		height: 45px; /*Perfecto*/ /*50px;*/
+		border-bottom: 1px solid #f6c719;
+		padding: 15px;
+		text-align: center;
+		margin: 0;
+		font-size: 13px;
+		letter-spacing: 1.5px;
+	}
+	.nav-menu .container-menu-link ul li a:hover,
+	nav.black .container-menu-link ul li a:hover {
+		/*-Pefecto-*/
+		background: linear-gradient(to right, #fef9e7, #f39c12, #d68910);
+		color: #fff; /*Perfecto*/ /*orange --#C8951F;*/
+	}
+	/*-----------------------------------------------------------*/
+
+	/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+	/*---------------------Perfecto--> Sub Menu------------------*/
+	/*.nav-menu .container-menu-link ul li .sub-menu::before {
+		content: "\f105";
+		font-family: fontAwesome;
+		font-size: 16px;
+		position: absolute;
+		display: block;
+		right: 50.99px;
+		line-height: 5px;
+		margin-top: 4px;
+		color: #ef2e46;
+	}*/
+	.nav-menu .container-menu-link ul li:hover .sub-menu::after {
+		color: var(--primary);
+		transition: all 0.3s;
+	}
+
+	.nav-menu .container-menu-link ul li ul {
+		display: none; /*Perfecto*/
+		border-top: none;
+	}
+	.nav-menu .container-menu-link ul li ul li {
+		display: none; /*Perfecto*/
+	}
+	.nav-menu .container-menu-link ul li ul li a {
+		display: none; /*Perfecto*/
+	}
+	/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+	/*-----------------------------------------------------------*/
+	.nav-menu .mycol-1 {
+		/*Logo Imagen*/
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-menu .mycol-2 {
+		/*Logo Letra*/
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.nav-menu .mycol-3 {
+		width: 0%;
+		padding-left: 0;
+		padding-right: 0;
+		padding: 0;
+	} /*Logo Icons*/
+	.nav-menu .mycol-3 .ul-icons {
+		display: none;
+	}
+	.nav-menu .mycol-3 .ul-icons li a {
+		display: none;
+	}
+
+	.hr-ema-linea {
+		display: none;
+	}
+}
+
+/*
+@media (max-width: 400px) {
+	.nav-menu .mycol-3 .ul-icons {
+		display: none;
+	}
+	.nav-menu .mycol-3 .ul-icons li a {
+		display: none;
+	}
+	.container-logo .cont-logo .logo-name a,
+	nav.black .container-logo .cont-logo .logo-name a {
+		font-size: 28px; 
+	}
+}*/
+/*-----------------------------------------------------------------*/
