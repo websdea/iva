@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es" lang="en">
 	<head>
-<!--<meta charset="UTF-8" />-->
-		<meta content="text/html; charset=utf-" http-equiv=Content-Type>
+		<!--<meta charset="UTF-8" />-->
+		<meta content="text/html; charset=utf-" http-equiv="Content-Type" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
 		<title>Mys Viajes - Eric</title>
+		<link rel="stylesheet" href="css/contacto.css" />
 
 		<!--CSS-->
 		<link rel="stylesheet" href="css/global.css" />
@@ -105,8 +105,8 @@
 					</ul>
 				</div>
 			</nav>
-		        <!--\ Linea No Mover de aqui /-->                
-			<hr class="hr-ema-linea">
+			<!--\ Linea No Mover de aqui /-->
+			<hr class="hr-ema-linea" />
 		</header>
 		<!-------------------------- Fin Header -------------------------->
 
@@ -216,6 +216,7 @@
 			</p>
 
 			<div class="img-gradiente">
+				<h2>Recuerda, DIOS ES AMOR</h2>
 			</div>
 
 			<br />
@@ -232,6 +233,59 @@
 				obcaecati dolorem consequuntur.
 			</p>
 		</section>
+
+		<section class="cls-contacto">
+			<div class="content">
+				<h2 class="logo">Datos de <span>Contacto</span></h2>
+				<div class="contact-wrapper">
+					<div class="contact-form">
+						<h3>Completa los siguientes campo</h3>
+						<form action="my-correo.php" method="POST">
+							<p>
+								<label>Nombres</label>
+								<input type="text" name="nombre" id="names" required />
+							</p>
+							<p>
+								<label>Telefono / Celular</label>
+								<input type="text" name="telefono" id="phone" required />
+							</p>
+							<p class="txt-large">
+								<label>Correo electrónico</label>
+								<input type="text" name="email" id="email" required />
+							</p>
+							<p class="txt-large">
+								<label>Mensaje</label>
+								<textarea
+									id="mensaje"
+									name="mensaje"
+									rows="3"
+									required
+								></textarea>
+							</p>
+							<p class="block-btn">
+								<button type="submit" id="btnsend">
+									Enviar mensaje
+								</button>
+							</p>
+						</form>
+					</div>
+					<div class="contact-info">
+						<h4>More Info</h4>
+						<ul>
+							<li><i class="fa fa-map-marker"></i> Baker Stret</li>
+							<li><i class="fa fa-phone"></i> 111 111 111 111</li>
+							<li><i class="fa fa-envelope-o"></i> contact@tito.com</li>
+						</ul>
+						<p>
+							Lorem ajedres avenida chavez, de amborisio. Lorem ipson. Eso es un
+							texto de prueba, aqui puedes poner informacion importante para tus
+							contactos.
+						</p>
+						<p>Company.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<!--========================= JavaScript =========================-->
 		<!---------------------------------------------------------------->
 		<!-- Sliders js -->
@@ -240,6 +294,7 @@
 		<!---------------------------------------------------------------->
 		<!-- Menu Mobil y Scroll-->
 		<script src="js/3-jquery-3.5.1.js"></script>
+		<script src="js/xx--my-contacto.js"></script>
 		<!--Master-->
 		<script src="js/my-menu.js"></script>
 		<!--Menu Mobil-->
