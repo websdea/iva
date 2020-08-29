@@ -23,8 +23,6 @@
    echo "<script type='text/javascript'>alter('Tu mensaje ha sido enviado exitosamente');</script>";
    echo "<script type='text/javascript'>window.location.href='https://espanol.yahoo.com/';</script>";
 
-
-
    //$destino = "meraro2005@gmail.com";
    ////esto es al correo que se enviara el mensaje
    //$nombre = $_POST["nombre"];
