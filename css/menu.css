@@ -9,7 +9,7 @@
 	z-index: 2; /*5000*/
 	background: transparent;
 	position: fixed;
-	padding-top: 0px;/*---------------------10px;*/
+	padding-top: 0px; /*---------------------10px;*/
 	/*background: linear-gradient(
 		to top,
 		transparent 22%,
@@ -27,8 +27,8 @@
 	left: 0;
 	top: 0;
 	width: 21%;
-	padding-left: 80px;/*------------------------7%;*/
-	padding-right: 10px;/*---------------------5%;*/
+	padding-left: 80px; /*------------------------7%;*/
+	padding-right: 10px; /*---------------------5%;*/
 	/*background: green;*/
 }
 .nav-menu .mycol-2 {
@@ -44,15 +44,15 @@
 .nav-menu .mycol-3 {
 	/*Logo Icons*/
 	right: 0;
-	width: 18%;/*-------------------------------------18%;*/
-	padding-left: 80px;/*------------------------5%;*/
-	padding-right: 10px;/*----------------------------5%;*/
+	width: 18%; /*-------------------------------------18%;*/
+	padding-left: 80px; /*------------------------5%;*/
+	padding-right: 10px; /*----------------------------5%;*/
 	/*background: goldenrod;*/
 }
 .hr-ema-linea {
 	/*-Borde del Menu-*/
 	position: relative;
-	top: 75px;	/*-89.4%;*/
+	top: 75px; /*-89.4%;*/
 	width: 100%; /*70%;*/
 	/*left: 50%;*/
 	/*transform: translateX(-50%) translateY(-50%);*/
@@ -63,14 +63,14 @@
 .nav-menu .container-logo .cont-logo .logo-name {
 	display: flex;
 	align-items: center;
-		/*line-height: 30px; -------------------------------------------------------*/
+	/*line-height: 30px; -------------------------------------------------------*/
 	margin-top: 14px; /*--------------------------------------------------------34px;*/
 }
 .container-logo .cont-logo .logo-name a {
 	text-decoration: none;
 	color: var(--primary);
 	text-shadow: 7px 0 7px black, 5px 0 10px black;
-	font-size: 40px;/*-----------------------45px;*/
+	font-size: 40px; /*-----------------------45px;*/
 	margin-left: -2px;
 	font-family: "Tangerine";
 	transition: all 0.5s;
@@ -111,10 +111,10 @@
 	margin-top: 28px; /*--------------------------------------------------------34px;*/
 	padding: 10px 14px; /*Perfecto*/
 	text-decoration: none;
-font-family: 'Poppins-600', sans-serif;
+	font-family: "Poppins-600", sans-serif;
 	color: #fff;
 	font-size: 14px; /*---------------12.5px;*/
-/*	font-weight: 700;*/
+	/*	font-weight: 700;*/
 	letter-spacing: 1px;
 	border: 1px solid transparent;
 
@@ -125,7 +125,7 @@ font-family: 'Poppins-600', sans-serif;
 .container-menu-link ul li a:focus,
 .container-menu-link ul li a:focus ul li a:focus {
 	color: var(--primary);
-								/*	border: 1px solid var(--primary);*/
+	/*	border: 1px solid var(--primary);*/
 	transition: all 0.7s;
 }
 /*-----------------------------------------------------------------*/
@@ -154,17 +154,17 @@ nav.black .container-logo .cont-logo .logo-name img {
 }
 nav.black .container-menu-link ul li a {
 	/*Menu Principal*/
-	margin-top: 14px;/*---------------------------8px;*/
+	margin-top: 14px; /*---------------------------8px;*/
 	transition: all 0.5s;
 }
 nav.black .mycol-3 ul li {
 	/*Iconos*/
-	margin-top: 18px;/*---------------------------10px;*/
+	margin-top: 18px; /*---------------------------10px;*/
 	transition: all 0.5s;
 }
 nav.black .container-menu-link ul li ul {
 	/*Sub Menu*/
-	margin-top: 8px;/*---------------------------6px;*/
+	margin-top: 8px; /*---------------------------6px;*/
 }
 /*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
@@ -196,11 +196,11 @@ nav.black .container-menu-link ul li ul {
 	position: absolute;
 	left: 1px; /*---14px;---*/
 	background: rgba(0, 0, 0, 0.6);
-	margin-top: 0;/*---------------------------8px;*/
-border: 1px solid #ccc;
-/*	border-top: 3.5px solid var(--primary);*/
+	margin-top: 0; /*---------------------------8px;*/
+	border: 1px solid #ccc;
+	/*	border-top: 3.5px solid var(--primary);*/
 
-border-radius: 6px;
+	border-radius: 6px;
 }
 .nav-menu .container-menu-link ul li:hover ul {
 	display: block; /*Perfecto-> MOSTRAR EL SUB MENU*/
@@ -214,7 +214,7 @@ border-radius: 6px;
 .nav-menu .container-menu-link ul li ul li a {
 	padding: 12px 18px;
 	font-size: 11.5px; /*11.5px;*/
-							font-weight: 100;
+	font-weight: 100;
 	margin-top: 2px;
 	color: var(--blanco);
 }
@@ -222,7 +222,7 @@ border-radius: 6px;
 	border: 1px solid transparent; /*OK*/
 }
 
-					/*.container-menu-link ul li:hover a {border: 1px solid var(--primary);}*/
+/*.container-menu-link ul li:hover a {border: 1px solid var(--primary);}*/
 
 .container-menu-link ul li:hover ul li a:hover,
 .container-menu-link ul li:hover a {
@@ -232,7 +232,7 @@ border-radius: 6px;
 
 .container-menu-link ul li:hover ul li a:hover {
 	background: #000;
-							font-weight: 100;
+	font-weight: 100;
 }
 
 .container-menu-link ul li:hover ul li:last-child {
@@ -311,14 +311,14 @@ border-radius: 6px;
 @media (max-width: 1400px) {
 	.nav-menu .mycol-1 {
 		/*Logo Imagen*/
-/*		width: 20%;*/
+		/*		width: 20%;*/
 		padding-left: 20px;
 		padding-right: 4px;
 	}
 	.nav-menu .mycol-2 {
 		/*Logo Letra*/
 
-/*		width: 60%;
+		/*		width: 60%;
 		padding-left: 13%;*/
 	}
 	.nav-menu .mycol-3 {
@@ -327,14 +327,14 @@ border-radius: 6px;
 		padding-left: 20px;
 		padding-right: 4px;
 	}
-/*	.hr-ema-linea {
+	/*	.hr-ema-linea {
 		left: 50%;
 		width: 75%;
 	}*/
 }
 
 /*----------------------------ok-------------------------------------*/
-@media (max-width: 900px),(max-width: 1200px) {
+@media (max-width: 900px), (max-width: 1200px) {
 	.cls-header .nav-menu,
 	nav.black {
 		background: rgba(0, 0, 0, 1);
@@ -379,7 +379,8 @@ border-radius: 6px;
 		cursor: pointer;
 	}
 	/*---------------------------------------------*/
-	/*------------------MENU Mobil-----------------*/										.nav-menu .container-menu-link,
+	/*------------------MENU Mobil-----------------*/
+	.nav-menu .container-menu-link,
 	nav.black .container-menu-link {
 		width: 100%;
 		position: absolute;
