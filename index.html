@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" lang="en">
 	<head>
 		<!--<meta charset="UTF-8" />-->
@@ -9,6 +9,8 @@
 		<title>Mys Viajes - Eric--1</title>
 		<link rel="stylesheet" href="css/contacto.css" />
 
+		<!-- Calendario CSS-->
+		<link rel="stylesheet" href="css/my-calendario.min.css" />
 		<!--CSS-->
 		<link rel="stylesheet" href="css/global.css" />
 		<link rel="stylesheet" href="css/menu.css" />
@@ -168,123 +170,148 @@
 			<!-- /onclick js -->
 		</div>
 		<!------------------------- //Fin banner ------------------------->
-		<section class="contenido-seccion1">
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-
-			<div class="img-gradiente">
-				<h2>Recuerda, DIOS ES AMOR</h2>
-			</div>
-
-			<br />
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad numquam
-				impedit fugit? Assumenda ratione, neque, eum adipisci saepe possimus
-				tempore voluptatibus, unde voluptate autem quia molestias. Error
-				obcaecati dolorem consequuntur.
-			</p>
-		</section>
-
-		<section class="cls-contacto">
-			<div class="content">
-				<h2 class="logo">Datos de <span>Contacto</span></h2>
-				<div class="contact-wrapper">
-					<div class="contact-form">
-						<h3>Completa los siguientes campo</h3>
-						<form action="my-correo.php" method="POST">
-							<p>
-								<label>Nombres</label>
-								<input type="text" name="nombre" required />
-							</p>
-							<p>
-								<label>Telefono / Celular</label>
-								<input type="tel" name="telefono" required />
-							</p>
-							<p class="txt-large">
-								<label>Correo electrónico</label>
-								<input type="email" name="email" required />
-							</p>
-							<p class="txt-large">
-								<label>Mensaje</label>
-								<textarea name="mensaje" rows="3" required></textarea>
-							</p>
-							<p class="block-btn">
-								<button type="submit" id="">Enviar mensaje</button>
-							</p>
-						</form>
-					</div>
-					<div class="contact-info">
-						<h4>More Info</h4>
-						<ul>
-							<li><i class="fa fa-map-marker"></i> Baker Stret</li>
-							<li><i class="fa fa-phone"></i> 111 111 111 111</li>
-							<li><i class="fa fa-envelope-o"></i> contact@tito.com</li>
-						</ul>
-						<p>
-							Lorem ajedres avenida chavez, de amborisio. Lorem ipson. Eso es un
-							texto de prueba, aqui puedes poner informacion importante para tus
-							contactos.
-						</p>
-						<p>Company.com</p>
+		<!---------------------------------------------------------------->
+		<main class="cls-main">
+			<!------------------------- nada ------------------------->
+			<section class="contenido-seccion1">
+				<div class="img-gradiente">
+					<h2>Recuerda...<br>¡ DIOS ES AMOR !</h2>
+				</div>
+			</section>
+			<!------------------------- //Fin  ------------------------->
+			<!---------------------------------------------------------------->
+			<!-------------------------- CALENDAIO --------------------------->
+<!--			<section class="cls-calendario">
+				<div class="container">
+					<div class="calendar">
+						<div class="month">
+							<i class="fa fa-angle-left prev"></i>
+							<div class="date">
+								<h1></h1>
+								<p></p>
+							</div>
+							<i class="fa fa-angle-right next"></i>
+						</div>
+						<div class="weekdays">
+							<div>DOM</div>
+							<div>LUN</div>
+							<div>MAR</div>
+							<div>MIE</div>
+							<div>JUE</div>
+							<div>VIE</div>
+							<div>SAB</div>
+						</div>
+						<div class="days"></div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section> -->
+			<section class="cls-calendario">
+				<div class="calendar disable-selection" id="calendar">
+    <div class="left-side">
+        <div class="current-day text-center">
+            <h1 class="calendar-left-side-day"></h1>
+            <div class="calendar-left-side-day-of-week"></div>
+        </div>
+        <div class="current-day-events">
+            <div>Eventos actuales:</div>
+            <ul class="current-day-events-list"></ul>
+        </div>
+        <div class="add-event-day">
+            <input type="text" class="add-event-day-field" placeholder="Crear un evento">
+            <span class="fa fa-plus-circle cursor-pointer add-event-day-field-btn"></span>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="text-right calendar-change-year">
+            <div class="calendar-change-year-slider">
+                <span class="fa fa-caret-left cursor-pointer calendar-change-year-slider-prev"></span>
+                <span class="calendar-current-year"></span>
+                <span class="fa fa-caret-right cursor-pointer calendar-change-year-slider-next"></span>
+            </div>
+        </div>
+        <div class="calendar-month-list">
+            <ul class="calendar-month">
+		<!-- Los MESES estan registrados en el JQuery -->
+	    </ul>
+        </div>
+        <div class="calendar-week-list">
+            <ul class="calendar-week">
+		<!-- Las SEMANAS EN DIAS estan registrados en el JQuery -->
+	    </ul>
+        </div>
+        <div class="calendar-day-list">
+            <ul class="calendar-days">
+		<!-- Los DIAS de cada MES estan registrados en el JQuery OKkkk -->
+	    </ul>
+        </div>
+    </div>
+				</div>
+			</section>
+			<!------------------------- //Fin Calendario ------------------------->
+
+			<section class="cls-contacto">
+				<div class="content">
+					<h2 class="logo">Datos de <span>Contacto</span></h2>
+					<div class="contact-wrapper">
+						<div class="contact-form">
+							<h3>Completa los siguientes campo</h3>
+							<form action="enviar.php" method="post">
+								<p>
+									<label>Nombres</label>
+									<input type="text" name="nombre" required />
+								</p>
+								<p>
+									<label>Telefono / Celular</label>
+									<input type="text" name="telefono" required />
+								</p>
+								<p class="txt-large">
+									<label>Correo electrónico</label>
+									<input type="email" name="correo" required />
+								</p>
+								<p class="txt-large">
+									<label>Mensaje</label>
+									<textarea name="mensaje" rows="3" required></textarea>
+								</p>
+								<p class="block-btn">
+									<button type="submit" id="">Enviar mensaje</button>
+								</p>
+							</form>
+						</div>
+						<div class="contact-info">
+							<h4>More Info</h4>
+							<ul>
+								<li><i class="fa fa-map-marker"></i> Baker Stret</li>
+								<li><i class="fa fa-phone"></i> 111 111 111 111</li>
+								<li><i class="fa fa-envelope-o"></i> contact@tito.com</li>
+							</ul>
+							<p>
+								Lorem ajedres avenida chavez, de amborisio. Lorem ipson. Eso es
+								un texto de prueba, aqui puedes poner informacion importante
+								para tus contactos.
+							</p>
+							<p>Company.com</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 		<!--========================= JavaScript =========================-->
 		<!---------------------------------------------------------------->
 		<!-- Sliders js -->
 		<script src="js/my-slider.js"></script>
 		<!-- //Fin Slider js -->
 		<!---------------------------------------------------------------->
+		<!---------------------------------------------------------------->
+		<!-- Calendar js -->
+		<script src="js/my-calendario.min.js"></script>
+
+		<!-- //Fin Calenadr js 
+		https://www.youtube.com/watch?v=yZrNIo6DsyQ
+		https://www.youtube.com/watch?v=GdwOjRW0-HE
+		https://www.youtube.com/watch?v=kAXwOHh50LU
+		-->
+		<!---------------------------------------------------------------->
+
 		<!-- Menu Mobil y Scroll-->
 		<script src="js/3-jquery-3.5.1.js"></script>
 		<script src="js/xx--my-contacto.js"></script>
